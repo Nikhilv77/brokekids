@@ -44,16 +44,16 @@ const Title = styled(motion.div)`
 
     user-select: none;
     @media (max-width: 800px) {
-      font-size: 2.8em;
+      font-size: 2.7em;
     }
     @media (max-width: 600px) {
       font-size: 2.6em;
     }
     @media (max-width: 500px) {
-      font-size: 2.4em;
+      font-size: 2.2em;
     }
     @media (max-width: 400px) {
-      font-size: 2.2em;
+      font-size: 2em;
     }
   }
 
@@ -84,7 +84,7 @@ const Title = styled(motion.div)`
     align-items: center;
     padding: 0.5rem;
     @media (max-width: 768px) {
-      font-size: 1em;
+      font-size: 1.6em;
       width: 70%;
     }
   }
@@ -138,7 +138,7 @@ const Header = () => {
         </motion.div>
 
         <motion.h2>
-        We all smiled, but not that much, and frowned but rarely cried. Nobody could succeed here, but most people around us seemed to be okay with that. It meant they wouldn't fail either.
+          Nobody could succeed here, but most people around us seemed to be okay with that. It meant they wouldn't fail either.
         </motion.h2>
       </Title>
       <motion.div

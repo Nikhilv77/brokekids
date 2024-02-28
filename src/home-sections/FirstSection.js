@@ -34,6 +34,7 @@ const I1 = styled.img`
 const I2 = styled.img`
   position: absolute;
   top: -100%;
+
   left: -100%;
   border-radius: 2rem;
   width: 20%;
@@ -43,9 +44,9 @@ const I2 = styled.img`
 
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
   @media screen and (max-width: 30em) {
-    height: 70vh;
+    width: 30%;
     top: 10%;
-
+  height: 70vh;
   }
 `
 
@@ -73,7 +74,7 @@ const TitleContainer = styled.div`
   }
   @media screen and (max-width: 480px) {
     top: 34%;
-    width: 70%;
+    width: 55%;
   }
 `
 
@@ -135,7 +136,7 @@ const FirstSection = () => {
     const Elem = sectionRef.current
     const ImageElem1 = ImageRef1.current
     const ImageElem2 = ImageRef2.current
-    const ImageElem3 = ImageRef3.current
+
     // pin the section
     gsap.to(Elem, {
       scrollTrigger: {
@@ -239,19 +240,7 @@ const FirstSection = () => {
     }
   }, [])
 
-  const MarqueeH1 = styled.h1`
-    text-shadow: 1px 1px 0px #333, 1px 1px 0px #333, 1px 1px 0px #333,
-      1px 1px 0px #333, 1px 1px 0px #333, 2px 2px 0px #333, 2px 2px 0px #333,
-      3px 3px 0px #333, 3px 3px 0px #333, 4px 4px 0px #333 !important;
-    font-family: Hauora, monospace;
-    color: #fff;
-    font-size: 4.3rem;
-    background-color: #383838;
 
-    @media only screen and (max-width: 700px) {
-      font-size: 3rem;
-    }
-  `
   return (
 
       <Section ref={sectionRef}>
@@ -265,7 +254,7 @@ const FirstSection = () => {
                 filter: ' drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.2))',
               }}
             >
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio maiores earum, incidunt architecto hic accusantium a temporibus ipsam. Quidem rem dolor quia aliquam itaque architecto, quas aspernatur exercitationem quo!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio maiores earum, incidunt architecto hic accusantium a temporibus!
             </span>
           </SubTitle>
         </TitleContainer>

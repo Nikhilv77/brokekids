@@ -59,14 +59,6 @@ const TitleContainer = styled.div`
   left: 50%;
   transform: translate(-50%,-50%);
 
-  @media screen and (max-width: 1120px) {
-    top: 10%;
-    left: 25%;
-    right: 25%;
-  }
-  @media screen and (max-width: 620px) {
-    top: 15%;
-  }
 `
 const TextContainer = styled.div`
   width: 40%;
@@ -84,14 +76,17 @@ const TextContainer = styled.div`
   /* text-align: justify; */
 
   @media screen and (max-width: 1120px) {
-    top: 30%;
+    top: 50%;
   }
   @media screen and (max-height: 600px) {
-    top: 20%;
+    top: 30%;
+  }
+  @media screen and (max-width: 517px) {
+    top: 60%;
   }
   @media screen and (max-width: 400px) {
-    top: 17%;
-    width: 50%;
+    
+    width: 60%;
   }
 `
 
@@ -141,20 +136,6 @@ const Text = styled.p`
   }
 `
 
-
-const MarqueeH1 = styled.h1`
-  text-shadow: 1px 1px 0px #fff, 1px 1px 0px #fff, 1px 1px 0px #333,
-    1px 1px 0px #333, 1px 1px 0px #333, 2px 2px 0px #333, 2px 2px 0px #333,
-    3px 3px 0px #333, 3px 3px 0px #333, 4px 4px 0px #333 !important;
-  font-family: Hauora, monospace;
-  color: #fff;
-  font-size: 4.3rem;
-  background-color: #383838;
-
-  @media only screen and (max-width: 700px) {
-    font-size: 3rem;
-  }
-`
 
 const ThirdSection = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -250,34 +231,14 @@ const ThirdSection = () => {
         'key3'
       )
     )
-    subElements('button').forEach((el) =>
-      t2.fromTo(
-        el,
-        {
-          scrollTrigger: {
-            trigger: el,
-            start: 'top top',
-            end: `bottom bottom`,
-            scrub: 1,
-          },
-          x: 100,
-          opacity: 0,
-        },
-        {
-          x: 0,
-          opacity: 1,
-        },
-        'key3'
-      )
-    )
-
+  
     return () => {
       if (t2) t2.kill()
     }
   }, [])
 
   return (
-    <div>
+    
       <Section ref={sectionRef}>
         {/* <Blur1 />
         <Blur2 />
@@ -288,24 +249,14 @@ const ThirdSection = () => {
         <TextContainer ref={textRef}>
           <Text>
             {' '}
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur natus dignissimos, beatae, ad ea delectus commodi similique voluptatem, itaque magni nemo voluptas doloremque perferendis non consequatur eligendi. Voluptatum impedit quas pariatur mollitia vitae.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur natus dignissimos, beatae, ad ea delectus commodi similique voluptatem, itaque magni nemo voluptas doloremque !
           </Text>
         </TextContainer>
         <I1 ref={ImageRef1} src={Image1} />
         <I2 ref={ImageRef2} src={Image2}/>
       </Section>
-      <div style={{ backgroundColor: '#181818' }}>
-        <Marquee speed={250}>
-          <MarqueeH1
-            whileHover={{
-              textShadow: '0 0 20px rgba(255, 255, 255, 0.8)',
-            }}
-          >
-            
-          </MarqueeH1>
-        </Marquee>
-      </div>
-    </div>
+      
+    
   )
 }
 

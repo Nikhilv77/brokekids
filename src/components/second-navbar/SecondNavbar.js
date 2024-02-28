@@ -225,16 +225,10 @@ const HomeNavbar = () => {
 
         <MobileMenu clicked={+click}>
           <a href="/">Home</a>
-          <a href="/about-us">Features</a>
-          <a href="/mysteries">FAQs</a>
-          <a href="/contact-us">Privacy Policy</a>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.syneidisi.tagsocial"
-            target="_blank"
-            class="no-hover"
-          >
-           
-          </a>
+          <a href="/about-us">About us</a>
+          <a href="/mysteries">Mysteries</a>
+          <a href="/contact-us">Reach out</a>
+          
         </MobileMenu>
       </Headers>
     

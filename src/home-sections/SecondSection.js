@@ -23,17 +23,17 @@ const Section = styled.section`
 const I1 = styled.img`
   position: absolute;
   top: -100%;
-  left: 10%;
+  left: -50%;
   border-radius: 2rem;
-  width: 20%;
+  width: 15%;
 
-  height: 55vh;
+  height: 42vh;
   object-fit: contain;
   z-index: 2;
 
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
   @media screen and (max-width: 30em) {
-    height: 70vh;
+    width: 25%;
     top: 10%;
 
   }
@@ -49,6 +49,11 @@ const I2 = styled.img`
   object-position: bottom;
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3));
   z-index: 2;
+  @media screen and (max-width: 30em) {
+    width: 30%;
+    top: 10%;
+
+  }
 `
 
 const TitleContainer = styled.div`
@@ -63,15 +68,6 @@ const TitleContainer = styled.div`
   left: 50%;
   transform: translate(-50%,-50%);
 
-
-  @media screen and (max-width: 1120px) {
-    top: 10%;
-    left: 25%;
-    right: 25%;
-  }
-  @media screen and (max-width: 620px) {
-    top: 15%;
-  }
 `
 const TitleContainer2 = styled.div`
   width: 30%;
@@ -87,15 +83,6 @@ const TitleContainer2 = styled.div`
   /* transform: translate(-50%,-50%); */
   bottom: -60%;
 
-
-  @media screen and (max-width: 1120px) {
-    top: 10%;
-    left: 25%;
-    right: 25%;
-  }
-  @media screen and (max-width: 620px) {
-    top: 15%;
-  }
 `
 
 
@@ -200,9 +187,9 @@ const SecondSection = () => {
           scrub: 1,
         },
       })
-      .to(ImageElem1, { top: '25%',  scale: 1.3, }, 'key1') .to(firstTextelem, { top: '-18%',  scale: 1,delay:0 })
+      .to(ImageElem1, { top: '42%', left:'10%',  scale: 1.5, }, 'key1') .to(firstTextelem, { top: '-18%',  scale: 1,delay:0 })
       .to(ImageElem2, { top: '28%', right: '5%', scale: 1.3 }, 'key2')
-      .to(secondTextElem, { top: '45%', scale: 1,},"key2")
+      .to(secondTextElem, { top: '45%',left:'45%', scale: 1,},"key2")
  
    
     return () => {

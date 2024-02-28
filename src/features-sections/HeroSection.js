@@ -47,6 +47,12 @@ border-radius: 40%;
   object-position: bottom;
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3)) grayscale(100%);
   z-index: 2;
+  @media screen and (max-width: 1092px) {
+    right: 8%; /* Adjust font size for even smaller screens */
+  }
+  @media screen and (max-width: 800px) {
+    right: 15%; /* Adjust font size for even smaller screens */
+  }
 `
 const V3 = styled.img`
   position: absolute;
@@ -63,6 +69,12 @@ const V3 = styled.img`
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3)) grayscale(100%);
 
   z-index: 2;
+  @media screen and (max-width: 1092px) {
+    bottom: 15%; /* Adjust font size for even smaller screens */
+  }
+  @media screen and (max-width: 800px) {
+    bottom: 25%; /* Adjust font size for even smaller screens */
+  }
 `
 const V4 = styled.img`
   position: absolute;
@@ -78,6 +90,14 @@ const V4 = styled.img`
   object-position: bottom;
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3)) grayscale(100%);
   z-index: 2;
+  @media screen and (max-width: 1092px) {
+   bottom: 15%;
+   right:20% /* Adjust font size for even smaller screens */
+  }
+  @media screen and (max-width: 800px) {
+    bottom: 25%;
+    right:26% /* Adjust font size for even smaller screens */
+  }
 `
 
 const TextContainer = styled.div`
@@ -121,9 +141,6 @@ const Title = styled.h1`
   color: #ffdf00;
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3));
 
-  @media screen and (max-width: 1120px) {
-    font-size: calc(2.4em + 1vw); /* Adjust font size for smaller screens */
-  }
   @media screen and (max-width: 625px) {
     font-size: calc(2em + 1vw); /* Adjust font size for even smaller screens */
   }
@@ -141,11 +158,6 @@ const Text = styled.p`
   z-index: 101;
   text-transform: 0 0 4px #fff;
 
-
-
-  @media screen and (max-width: 1120px) {
-    font-size: calc(1.2em + 1vw);
-  }
   @media screen and (max-width: 625px) {
     font-size: calc(1em + 1vw);
   }
