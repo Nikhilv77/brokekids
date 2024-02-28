@@ -1,0 +1,109 @@
+.wrapper {
+  min-height: rem(400px);
+  width: 77vw;
+  margin: auto;
+  background: linear-gradient(to right, rgba(255, 223, 0, 1), rgb(255, 221, 0));
+  border-radius: var(--mantine-radius-md);
+  padding: calc(var(--mantine-spacing-xl) * 2.5);
+
+  @media (max-width: 576px) {
+    padding: calc(var(--mantine-spacing-xl) * 1.5);
+  }
+  @media (max-width: 720px) {
+    width: 95vw;
+  }
+}
+
+.title {
+  font-family: "Righteous", sans-serif !important;
+  font-size: 2.6rem !important;
+  color: #fff;
+  text-shadow: 1px 1px 0px #333, 1px 1px 0px #333, 1px 1px 0px #333,
+    1px 1px 0px #333, 1px 1px 0px #333, 2px 2px 0px #333, 2px 2px 0px #333,
+    2px 2px 0px #333, 1px 1px 0px #333, 2px 2px 0px #333;
+
+ 
+  line-height: 1;
+  @media (max-width: 720px) {
+    font-size: 2rem !important;
+  }
+}
+
+.description {
+  color: #fff !important;
+  text-shadow: 1px 1px 0px #333, 1px 1px 0px #333, 1px 1px 0px #333,
+    1px 1px 0px #333, 1px 1px 0px #333, 2px 2px 0px #333, 2px 2px 0px #333,
+    2px 2px 0px #333, 1px 1px 0px #333, 2px 2px 0px #333;
+
+  font-family: "Righteous", sans-serif !important;
+
+  font-size: 1.5rem !important;
+  max-width: rem(300px);
+  @media (max-width: 720px) {
+    font-size: 1rem !important;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
+}
+
+.form {
+  background-color: #393939;
+  padding: var(--mantine-spacing-xl);
+  border-radius: var(--mantine-radius-md);
+  box-shadow: var(--mantine-shadow-lg);
+  font-family: "Righteous", sans-serif !important;
+  @media (max-width: 720px) {
+    font-size: 0.9rem !important;
+  }
+}
+
+.social {
+  color: var(--mantine-color-white);
+
+  @mixin hover {
+    color: var(--mantine-color-blue-1);
+  }
+}
+
+.input {
+  background-color: var(--mantine-color-white);
+
+  color: #333 !important;
+  font-family: "Righteous", sans-serif !important;
+  font-size: 1rem !important;
+  &::placeholder {
+    color: var(--mantine-color-gray-5);
+    font-family: "Righteous", sans-serif !important;
+    font-size: 1.1rem;
+    @media (max-width: 720px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+
+
+.inputLabel {
+  color: #fff;
+  font-size: 1.1rem !important;
+  font-family: "Righteous", sans-serif !important;
+  @media (max-width: 720px) {
+    font-size: 1rem;
+  }
+}
+
+.control {
+  background-color:#ffdf00 !important;
+  color: #fff;
+  text-shadow: 1px 1px 0px #333, 1px 1px 0px #333, 1px 1px 0px #333,
+    1px 1px 0px #333, 1px 1px 0px #333, 2px 2px 0px #333, 2px 2px 0px #333,
+    2px 2px 0px #333, 1px 1px 0px #333, 2px 2px 0px #333;
+
+  font-size: 1.3rem !important;
+  font-family: "Righteous", sans-serif !important;
+  @media (max-width: 720px) {
+    font-size: 1rem;
+  }
+}
