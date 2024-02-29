@@ -199,7 +199,7 @@ const SixthSection = () => {
   }
 `
   return (
-    <div>
+  
       <Section ref={sectionRef}>
       
       <TextContainer ref={textRef}>
@@ -213,25 +213,7 @@ const SixthSection = () => {
         <I1 ref={ImageRef1} src={Image1}/>
       </Section>
    
-      <div
-        style={{
-          backgroundColor: 'black',
-          borderRadius: '10px',
-          padding: '10px',
-          border:'none'
-        }}
-      >
-        <Marquee speed={250} direction="left">
-          <MarqueeH1
-            whileHover={{
-              textShadow: '0 0 20px rgba(255, 255, 255, 0.8)',
-            }}
-          >
-  🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟
-          </MarqueeH1>
-        </Marquee>
-      </div>
-    </div>
+      
   )
 }
 

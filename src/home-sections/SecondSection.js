@@ -198,7 +198,7 @@ const SecondSection = () => {
   }, [])
 
   return (
-    <div>
+   
       <Section ref={sectionRef}>
        
         <TitleContainer ref={firstTextRef}>
@@ -216,24 +216,7 @@ const SecondSection = () => {
         <I2 ref={ImageRef2} src={Image2} />
       </Section>
 
-      <div
-        style={{
-          backgroundColor: 'black',
-          borderRadius: '10px',
-          padding: '10px',
-        }}
-      >
-        <Marquee speed={250} direction="right">
-          <MarqueeH1
-            whileHover={{
-              textShadow: '0 0 20px rgba(255, 255, 255, 0.8)',
-            }}
-          >
-  💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀
-          </MarqueeH1>
-        </Marquee>
-      </div>
-    </div>
+     
   )
 }
 

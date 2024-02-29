@@ -210,12 +210,7 @@ const HomeNavbar = () => {
             <a href="/mysteries">Mysteries</a>
             <a href="/contact-us">Reach out</a>
           </div>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.syneidisi.tagsocial"
-            target="_blank"
-            class="no-hover"
-          >
-          </a>
+         
         </Nav>
 
         <HamburgerBtn clicked={+click} onClick={() => setClick(!click)}>

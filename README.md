@@ -2,7 +2,7 @@
 
 This webapp is for all the broke kids out there.
 
-## About TagSocial
+## About 
 
 Its about 5 broke kids
 
@@ -21,7 +21,7 @@ To run the broke kids website locally on your machine, follow these steps:
    npm run start
    ```
 
-4. Open your web browser and navigate to `http://localhost:3000` to view the TagSocial website locally.
+4. Open your web browser and navigate to `http://localhost:3000` to view the website locally.
 
 ## Designers
   Nikhil Verma
